@@ -31,7 +31,7 @@ jobs:
           build-args: |
             NODE_VERSON=19.8.1-bullseye
             PNPM_VERSION=6.35.1
-          file: Dockerfile_focal
+          file: Dockerfile
           push: true
           tags: |
             enix223/node-pnpm:19_6.35.1
@@ -52,7 +52,7 @@ jobs:
           build-args: |
             NODE_VERSON=19.8.1-bullseye
             PNPM_VERSION=7.30.5
-          file: Dockerfile_focal
+          file: Dockerfile
           push: true
           tags: |
             enix223/node-pnpm:19_7.30.5
@@ -73,7 +73,7 @@ jobs:
           build-args: |
             NODE_VERSON=19.8.1-bullseye
             PNPM_VERSION=8.0.0
-          file: Dockerfile_focal
+          file: Dockerfile
           push: true
           tags: |
             enix223/node-pnpm:19_8.0.0
@@ -95,7 +95,7 @@ jobs:
           build-args: |
             NODE_VERSON=18.15.0-bullseye
             PNPM_VERSION=6.35.1
-          file: Dockerfile_focal
+          file: Dockerfile
           push: true
           tags: |
             enix223/node-pnpm:18_6.35.1
@@ -117,7 +117,7 @@ jobs:
           build-args: |
             NODE_VERSON=18.15.0-bullseye
             PNPM_VERSION=7.30.5
-          file: Dockerfile_focal
+          file: Dockerfile
           push: true
           tags: |
             enix223/node-pnpm:18_7.30.5
@@ -139,7 +139,7 @@ jobs:
           build-args: |
             NODE_VERSON=18.15.0-bullseye
             PNPM_VERSION=8.0.0
-          file: Dockerfile_focal
+          file: Dockerfile
           push: true
           tags: |
             enix223/node-pnpm:18_8.0.0
@@ -162,7 +162,7 @@ jobs:
           build-args: |
             NODE_VERSON=16.19.1-buster
             PNPM_VERSION=6.35.1
-          file: Dockerfile_focal
+          file: Dockerfile
           push: true
           tags: |
             enix223/node-pnpm:16_6.35.1
@@ -181,7 +181,7 @@ jobs:
           build-args: |
             NODE_VERSON=16.19.1-buster
             PNPM_VERSION=7.30.5
-          file: Dockerfile_focal
+          file: Dockerfile
           push: true
           tags: |
             enix223/node-pnpm:16_7.30.5
@@ -200,7 +200,7 @@ jobs:
           build-args: |
             NODE_VERSON=16.19.1-buster
             PNPM_VERSION=8.0.0
-          file: Dockerfile_focal
+          file: Dockerfile
           push: true
           tags: |
             enix223/node-pnpm:16_8.0.0
