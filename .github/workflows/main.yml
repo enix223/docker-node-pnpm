@@ -51,20 +51,20 @@ jobs:
           platforms: linux/amd64, linux/arm64/v8, linux/arm/v7
           build-args: |
             NODE_VERSON=19.8.1-bullseye
-            PNPM_VERSION=7.30.5
+            PNPM_VERSION=7.33.5
           file: Dockerfile
           push: true
           tags: |
-            enix223/node-pnpm:19_7.30.5
-            enix223/node-pnpm:19-bullseye_7.30.5
-            enix223/node-pnpm:19.8_7.30.5
-            enix223/node-pnpm:19.8-bullseye_7.30.5
-            enix223/node-pnpm:19.8.1_7.30.5
-            enix223/node-pnpm:19.8.1-bullseye_7.30.5
-            enix223/node-pnpm:bullseye_7.30.5
-            enix223/node-pnpm:current_7.30.5
-            enix223/node-pnpm:current-bullseye_7.30.5
-            enix223/node-pnpm:latest_7.30.5
+            enix223/node-pnpm:19_7.33.5
+            enix223/node-pnpm:19-bullseye_7.33.5
+            enix223/node-pnpm:19.8_7.33.5
+            enix223/node-pnpm:19.8-bullseye_7.33.5
+            enix223/node-pnpm:19.8.1_7.33.5
+            enix223/node-pnpm:19.8.1-bullseye_7.33.5
+            enix223/node-pnpm:bullseye_7.33.5
+            enix223/node-pnpm:current_7.33.5
+            enix223/node-pnpm:current-bullseye_7.33.5
+            enix223/node-pnpm:latest_7.33.5
       - name: Build node-19 + pnpm@8
         uses: docker/build-push-action@v3
         with:
@@ -72,20 +72,20 @@ jobs:
           platforms: linux/amd64, linux/arm64/v8, linux/arm/v7
           build-args: |
             NODE_VERSON=19.8.1-bullseye
-            PNPM_VERSION=8.0.0
+            PNPM_VERSION=8.6.11
           file: Dockerfile
           push: true
           tags: |
-            enix223/node-pnpm:19_8.0.0
-            enix223/node-pnpm:19-bullseye_8.0.0
-            enix223/node-pnpm:19.8_8.0.0
-            enix223/node-pnpm:19.8-bullseye_8.0.0
-            enix223/node-pnpm:19.8.1_8.0.0
-            enix223/node-pnpm:19.8.1-bullseye_8.0.0
-            enix223/node-pnpm:bullseye_8.0.0
-            enix223/node-pnpm:current_8.0.0
-            enix223/node-pnpm:current-bullseye_8.0.0
-            enix223/node-pnpm:latest_8.0.0
+            enix223/node-pnpm:19_8.6.11
+            enix223/node-pnpm:19-bullseye_8.6.11
+            enix223/node-pnpm:19.8_8.6.11
+            enix223/node-pnpm:19.8-bullseye_8.6.11
+            enix223/node-pnpm:19.8.1_8.6.11
+            enix223/node-pnpm:19.8.1-bullseye_8.6.11
+            enix223/node-pnpm:bullseye_8.6.11
+            enix223/node-pnpm:current_8.6.11
+            enix223/node-pnpm:current-bullseye_8.6.11
+            enix223/node-pnpm:latest_8.6.11
 
       - name: Build node-18 + pnpm@6
         uses: docker/build-push-action@v3
@@ -116,21 +116,21 @@ jobs:
           platforms: linux/amd64, linux/arm64/v8, linux/arm/v7
           build-args: |
             NODE_VERSON=18.15.0-bullseye
-            PNPM_VERSION=7.30.5
+            PNPM_VERSION=7.33.5
           file: Dockerfile
           push: true
           tags: |
-            enix223/node-pnpm:18_7.30.5
-            enix223/node-pnpm:18-bullseye_7.30.5
-            enix223/node-pnpm:18.15_7.30.5
-            enix223/node-pnpm:18.15-bullseye_7.30.5
-            enix223/node-pnpm:18.15.0_7.30.5
-            enix223/node-pnpm:18.15.0-bullseye_7.30.5
-            enix223/node-pnpm:hydrogen_7.30.5
-            enix223/node-pnpm:hydrogen-bullseye_7.30.5
-            enix223/node-pnpm:lts_7.30.5
-            enix223/node-pnpm:lts-bullseye_7.30.5
-            enix223/node-pnpm:lts-hydrogen_7.30.5
+            enix223/node-pnpm:18_7.33.5
+            enix223/node-pnpm:18-bullseye_7.33.5
+            enix223/node-pnpm:18.15_7.33.5
+            enix223/node-pnpm:18.15-bullseye_7.33.5
+            enix223/node-pnpm:18.15.0_7.33.5
+            enix223/node-pnpm:18.15.0-bullseye_7.33.5
+            enix223/node-pnpm:hydrogen_7.33.5
+            enix223/node-pnpm:hydrogen-bullseye_7.33.5
+            enix223/node-pnpm:lts_7.33.5
+            enix223/node-pnpm:lts-bullseye_7.33.5
+            enix223/node-pnpm:lts-hydrogen_7.33.5
       - name: Build node-18 + pnpm@8
         uses: docker/build-push-action@v3
         with:
@@ -138,21 +138,21 @@ jobs:
           platforms: linux/amd64, linux/arm64/v8, linux/arm/v7
           build-args: |
             NODE_VERSON=18.15.0-bullseye
-            PNPM_VERSION=8.0.0
+            PNPM_VERSION=8.6.11
           file: Dockerfile
           push: true
           tags: |
-            enix223/node-pnpm:18_8.0.0
-            enix223/node-pnpm:18-bullseye_8.0.0
-            enix223/node-pnpm:18.15_8.0.0
-            enix223/node-pnpm:18.15-bullseye_8.0.0
-            enix223/node-pnpm:18.15.0_8.0.0
-            enix223/node-pnpm:18.15.0-bullseye_8.0.0
-            enix223/node-pnpm:hydrogen_8.0.0
-            enix223/node-pnpm:hydrogen-bullseye_8.0.0
-            enix223/node-pnpm:lts_8.0.0
-            enix223/node-pnpm:lts-bullseye_8.0.0
-            enix223/node-pnpm:lts-hydrogen_8.0.0
+            enix223/node-pnpm:18_8.6.11
+            enix223/node-pnpm:18-bullseye_8.6.11
+            enix223/node-pnpm:18.15_8.6.11
+            enix223/node-pnpm:18.15-bullseye_8.6.11
+            enix223/node-pnpm:18.15.0_8.6.11
+            enix223/node-pnpm:18.15.0-bullseye_8.6.11
+            enix223/node-pnpm:hydrogen_8.6.11
+            enix223/node-pnpm:hydrogen-bullseye_8.6.11
+            enix223/node-pnpm:lts_8.6.11
+            enix223/node-pnpm:lts-bullseye_8.6.11
+            enix223/node-pnpm:lts-hydrogen_8.6.11
         
       - name: Build node-16 + pnpm@6
         uses: docker/build-push-action@v3
@@ -180,18 +180,18 @@ jobs:
           platforms: linux/amd64, linux/arm64/v8, linux/arm/v7
           build-args: |
             NODE_VERSON=16.19.1-buster
-            PNPM_VERSION=7.30.5
+            PNPM_VERSION=7.33.5
           file: Dockerfile
           push: true
           tags: |
-            enix223/node-pnpm:16_7.30.5
-            enix223/node-pnpm:16-buster_7.30.5
-            enix223/node-pnpm:16.19_7.30.5
-            enix223/node-pnpm:16.19-buster_7.30.5
-            enix223/node-pnpm:16.19.1_7.30.5
-            enix223/node-pnpm:16.19.1-buster_7.30.5
-            enix223/node-pnpm:gallium_7.30.5
-            enix223/node-pnpm:gallium-buster_7.30.5
+            enix223/node-pnpm:16_7.33.5
+            enix223/node-pnpm:16-buster_7.33.5
+            enix223/node-pnpm:16.19_7.33.5
+            enix223/node-pnpm:16.19-buster_7.33.5
+            enix223/node-pnpm:16.19.1_7.33.5
+            enix223/node-pnpm:16.19.1-buster_7.33.5
+            enix223/node-pnpm:gallium_7.33.5
+            enix223/node-pnpm:gallium-buster_7.33.5
       - name: Build node-16 + pnpm@8
         uses: docker/build-push-action@v3
         with:
@@ -199,15 +199,15 @@ jobs:
           platforms: linux/amd64, linux/arm64/v8, linux/arm/v7
           build-args: |
             NODE_VERSON=16.19.1-buster
-            PNPM_VERSION=8.0.0
+            PNPM_VERSION=8.6.11
           file: Dockerfile
           push: true
           tags: |
-            enix223/node-pnpm:16_8.0.0
-            enix223/node-pnpm:16-buster_8.0.0
-            enix223/node-pnpm:16.19_8.0.0
-            enix223/node-pnpm:16.19-buster_8.0.0
-            enix223/node-pnpm:16.19.1_8.0.0
-            enix223/node-pnpm:16.19.1-buster_8.0.0
-            enix223/node-pnpm:gallium_8.0.0
-            enix223/node-pnpm:gallium-buster_8.0.0
+            enix223/node-pnpm:16_8.6.11
+            enix223/node-pnpm:16-buster_8.6.11
+            enix223/node-pnpm:16.19_8.6.11
+            enix223/node-pnpm:16.19-buster_8.6.11
+            enix223/node-pnpm:16.19.1_8.6.11
+            enix223/node-pnpm:16.19.1-buster_8.6.11
+            enix223/node-pnpm:gallium_8.6.11
+            enix223/node-pnpm:gallium-buster_8.6.11
