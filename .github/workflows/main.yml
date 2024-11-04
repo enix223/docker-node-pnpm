@@ -153,6 +153,18 @@ jobs:
             enix223/node-pnpm:lts_8.6.11
             enix223/node-pnpm:lts-bullseye_8.6.11
             enix223/node-pnpm:lts-hydrogen_8.6.11
+      - name: Build node-18 + pnpm@9
+        uses: docker/build-push-action@v3
+        with:
+          context: .
+          platforms: linux/amd64, linux/arm64/v8, linux/arm/v7
+          build-args: |
+            NODE_VERSON=18.19.0-bullseye
+            PNPM_VERSION=9.12.2
+          file: Dockerfile
+          push: true
+          tags: |
+            enix223/node-pnpm:18.19.0-bullseye_9.12.2
         
       - name: Build node-16 + pnpm@6
         uses: docker/build-push-action@v3
