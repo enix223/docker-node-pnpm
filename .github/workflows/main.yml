@@ -30,11 +30,11 @@ jobs:
           platforms: linux/amd64, linux/arm64/v8
           build-args: |
             NODE_VERSION=23.1.0-bullseye
-            PNPM_VERSION=9.12.2
+            PNPM_VERSION=10.10.0
           file: Dockerfile
           push: true
           tags: |
-            enix223/node-pnpm:23.1.0-bullseye_9.12.2
+            enix223/node-pnpm:23.1.0-bullseye_10.10.0
 
       - name: Build node-22 + pnpm@9
         uses: docker/build-push-action@v3
@@ -43,11 +43,11 @@ jobs:
           platforms: linux/amd64, linux/arm64/v8
           build-args: |
             NODE_VERSION=22.11.0-bullseye
-            PNPM_VERSION=9.12.2
+            PNPM_VERSION=10.10.0
           file: Dockerfile
           push: true
           tags: |
-            enix223/node-pnpm:22.11.0-bullseye_9.12.2
+            enix223/node-pnpm:22.11.0-bullseye_10.10.0
 
       - name: Build node-20 + pnpm@9
         uses: docker/build-push-action@v3
@@ -56,11 +56,11 @@ jobs:
           platforms: linux/amd64, linux/arm64/v8
           build-args: |
             NODE_VERSION=20.18.0-bullseye
-            PNPM_VERSION=9.12.2
+            PNPM_VERSION=10.10.0
           file: Dockerfile
           push: true
           tags: |
-            enix223/node-pnpm:20.18.0-bullseye_9.12.2
+            enix223/node-pnpm:20.18.0-bullseye_10.10.0
 
       - name: Build node-18 + pnpm@9
         uses: docker/build-push-action@v3
@@ -69,8 +69,8 @@ jobs:
           platforms: linux/amd64, linux/arm64/v8
           build-args: |
             NODE_VERSION=18.20.4-bullseye
-            PNPM_VERSION=9.12.2
+            PNPM_VERSION=10.10.0
           file: Dockerfile
           push: true
           tags: |
-            enix223/node-pnpm:18.20.4-bullseye_9.12.2
+            enix223/node-pnpm:18.20.4-bullseye_10.10.0
