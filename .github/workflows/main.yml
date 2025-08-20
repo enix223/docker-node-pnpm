@@ -23,7 +23,7 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
-      - name: Build node-23 + pnpm@9
+      - name: Build node-23 + pnpm@10
         uses: docker/build-push-action@v3
         with:
           context: .
@@ -36,7 +36,7 @@ jobs:
           tags: |
             enix223/node-pnpm:23.1.0-bullseye_10.10.0
 
-      - name: Build node-22 + pnpm@9
+      - name: Build node-22 + pnpm@10
         uses: docker/build-push-action@v3
         with:
           context: .
@@ -49,7 +49,7 @@ jobs:
           tags: |
             enix223/node-pnpm:22.11.0-bullseye_10.10.0
 
-      - name: Build node-20 + pnpm@9
+      - name: Build node-20 + pnpm@10
         uses: docker/build-push-action@v3
         with:
           context: .
@@ -62,7 +62,7 @@ jobs:
           tags: |
             enix223/node-pnpm:20.18.0-bullseye_10.10.0
 
-      - name: Build node-18 + pnpm@9
+      - name: Build node-18 + pnpm@10
         uses: docker/build-push-action@v3
         with:
           context: .
