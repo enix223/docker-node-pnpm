@@ -23,6 +23,32 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
+      - name: Build node-24 + pnpm@11
+        uses: docker/build-push-action@v3
+        with:
+          context: .
+          platforms: linux/amd64, linux/arm64/v8
+          build-args: |
+            NODE_VERSION=24.22.0-bookworm
+            PNPM_VERSION=11.28.6
+          file: Dockerfile
+          push: true
+          tags: |
+            enix223/node-pnpm:24.22.0-bookworm_11.28.6
+
+      - name: Build node-24 + pnpm@12
+        uses: docker/build-push-action@v3
+        with:
+          context: .
+          platforms: linux/amd64, linux/arm64/v8
+          build-args: |
+            NODE_VERSION=24.22.0-bookworm
+            PNPM_VERSION=12.14.0
+          file: Dockerfile
+          push: true
+          tags: |
+            enix223/node-pnpm:24.22.0-bookworm_12.14.0
+
       - name: Build node-23 + pnpm@10
         uses: docker/build-push-action@v3
         with:
